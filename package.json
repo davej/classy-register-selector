@@ -1,7 +1,7 @@
 {
-  "name": "classy-registerSelector",
+  "name": "classy-register-selector",
   "scripts": {
-    "start": "./node_modules/coffee-script/bin/coffee --compile classy-registerSelector.coffee",
+    "start": "./node_modules/coffee-script/bin/coffee --compile classy-register-selector.coffee",
     "test": "./node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "author": "Dave Jeffery",

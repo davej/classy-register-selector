@@ -6,7 +6,7 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-classy/angular-classy.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'classy-registerSelector.js',
+      'classy-register-selector.js',
       'examples/todomvc/js/app.js',
       'examples/todomvc/js/*/*.js',
       'test/unit/*.js'
