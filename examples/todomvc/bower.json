@@ -1,0 +1,11 @@
+{
+  "name": "todomvc-angular-classy-registerSelector",
+  "version": "0.0.0",
+  "dependencies": {
+  	"angular-classy": "~1",
+    "todomvc-common": "~0.1.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3"
+  }
+}
