@@ -16,7 +16,7 @@ app.classy.controller({
 });
 ```
 
-If you want to reverse-reference controllers using CSS-style selectors then you simply give your controller an element selector reference instead of a name, like this:
+With the `register-selector` plugin you can reverse-reference controllers using CSS-style selectors instead of a name, like this:
 
 ```html
 <!-- In your HTML -->
@@ -30,7 +30,7 @@ app.classy.controller({
 });
 ```
 
-If available jQuery will be used as the selector engine, otherwise it will fallback to document.querySelectorAll. There is currently no test coverage for this feature so it's probably best not to use it in production (unless you're a badass).
+If available jQuery will be used as the selector engine, otherwise it will fallback to document.querySelectorAll.
 
 
 ## Install
@@ -38,7 +38,7 @@ If available jQuery will be used as the selector engine, otherwise it will fallb
 Install with `bower`:
 
 ```shell
-bower install classy-registerSelector
+bower install classy-register-selector
 ```
 
 Add to your `index.html`:
@@ -46,13 +46,13 @@ Add to your `index.html`:
 ```html
 <script src="/bower_components/angular/angular.js"></script>
 <script src="/bower_components/angular-classy/angular-classy.js"></script>
-<script src="/bower_components/classy-registerSelector/classy-registerSelector.js"></script>
+<script src="/bower_components/classy-registerSelector/classy-register-selector.js"></script>
 ```
 
 Add `classy` and `classy-registerSelector` to your application module.
 
 ```javascript
-var app = angular.module('app', ['classy', 'classy-registerSelector']);
+var app = angular.module('app', ['classy', 'classy-register-selector']);
 ```
 
 ## Running Tests
