@@ -4,10 +4,11 @@ This feature is stolen from AngularDart (you may also be familiar with it from B
 
 This is how you would typically bind a controller to a view with Angular Classy:
 
-```javascript
+```html
 <!-- In your HTML -->
 <div id="footer" ng-controller="FooterCtrl"></div>
-
+```
+```javascript
 // In your JS
 app.classy.controller({
   name: 'FooterCtrl',
@@ -17,10 +18,11 @@ app.classy.controller({
 
 If you want to reverse-reference controllers using CSS-style selectors then you simply give your controller an element selector reference instead of a name, like this:
 
-```javascript
+```html
 <!-- In your HTML -->
 <div id="footer"></div>
-
+```
+```javascript
 // In your JS
 app.classy.controller({
   el: '#footer',
