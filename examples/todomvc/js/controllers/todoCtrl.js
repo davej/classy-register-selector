@@ -17,10 +17,10 @@ todoFuncs = {
   init: function() {
     this.todos = this.$.todos = this.todoStorage.get();
     this.$.editedTodo = null;
-    if (this.$loc.path() === '') {
-      this.$loc.path('/');
+    if (this.$location.path() === '') {
+      this.$location.path('/');
     }
-    return this.$.location = this.$loc;
+    return this.$.location = this.$location;
   },
   watch: {
     'location.path()': function(path) {
@@ -34,7 +34,7 @@ todoFuncs = {
   },
   methods: {
     _onTodoChange: function(newValue, oldValue) {
-      this.$.remainingCount = this.fF(this.todos, {
+      this.$.remainingCount = this.filterFilter(this.todos, {
         completed: false
       }).length;
       this.$.completedCount = this.todos.length - this.$.remainingCount;
@@ -94,10 +94,5 @@ todoFuncs = {
 todomvc.cC(angular.extend(todoFuncs, {
   name: 'ThisDoesNotMapToNgController',
   el: '#todoapp',
-  inject: {
-    $scope: '$',
-    $location: '$loc',
-    todoStorage: '.',
-    filterFilter: 'fF'
-  }
+  inject: ['$scope', '$location', 'todoStorage', 'filterFilter']
 }));

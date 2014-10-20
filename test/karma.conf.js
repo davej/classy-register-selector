@@ -6,10 +6,11 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-classy/angular-classy.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'classy-register-selector.js',
+      'registerSelector.js',
       'examples/todomvc/js/app.js',
+      'test/unit/beforeTest.js',
       'examples/todomvc/js/*/*.js',
-      'test/unit/*.js'
+      'test/unit/app.js'
     ],
     autoWatch: true,
     singleRun: true,

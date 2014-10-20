@@ -18,8 +18,8 @@ todoFuncs =
 
     @$.editedTodo = null
 
-    if @$loc.path() is '' then @$loc.path('/')
-    @$.location = @$loc
+    if @$location.path() is '' then @$location.path('/')
+    @$.location = @$location
 
   watch:
     'location.path()': (path) ->
@@ -32,7 +32,7 @@ todoFuncs =
 
   methods:
     _onTodoChange: (newValue, oldValue) ->
-      @$.remainingCount = @fF(@todos, { completed: false }).length
+      @$.remainingCount = @filterFilter(@todos, { completed: false }).length
       @$.completedCount = @todos.length - @$.remainingCount
       @$.allChecked = !@$.remainingCount
       if newValue != oldValue # This prevents unneeded calls to the local storage
@@ -76,9 +76,5 @@ todomvc.cC angular.extend todoFuncs,
   name: 'ThisDoesNotMapToNgController'
   el: '#todoapp'
 
-  inject:
-    $scope: '$'
-    $location: '$loc'
-    todoStorage: '.'
-    filterFilter: 'fF'
+  inject: ['$scope', '$location', 'todoStorage', 'filterFilter']
 

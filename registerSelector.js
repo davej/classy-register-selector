@@ -4,8 +4,7 @@
 
   selectorControllerCount = 0;
 
-  angular.module('classy-register-selector', ['classy-core']).classy.plugin.controller({
-    name: 'register-selector',
+  angular.module('classy.registerSelector', ['classy.core']).classy.plugin.controller({
     options: {
       enabled: true
     },

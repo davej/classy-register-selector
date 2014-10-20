@@ -7,5 +7,5 @@
  *
  * @type {angular.Module}
  */
-var todomvc = angular.module('todomvc', ["classy", "classy-register-selector"]);
+var todomvc = angular.module('todomvc', ["classy", "classy.registerSelector"]);
 
