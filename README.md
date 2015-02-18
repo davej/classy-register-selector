@@ -1,4 +1,4 @@
-# Use DOM selectors to register Angular Classy controllers [![Build Status](https://travis-ci.org/davej/classy-registerSelector.svg)](https://travis-ci.org/davej/classy-registerSelector)
+# Use DOM selectors to register Angular Classy controllers [![Build Status](https://travis-ci.org/davej/classy-register-selector.svg)](https://travis-ci.org/davej/classy-registerSelector)
 
 This feature is stolen from AngularDart (you may also be familiar with it from Backbone and other MVC frameworks). It's best explained with code.
 
